@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/photo profil.png"/>
+  <title> Portfolio | Alexis Rossignol </title>
+
+  <!-- Police d'écriture -->
+    <link href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;700&display=swap' rel='stylesheet' type="text/css">
+
+    <!-- CSS et bootstrap -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--<link rel="stylesheet" media="screen and (max-width: 1280px)" href="css/responsive.css">-->
+
+  <!-- Contact footer -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+
+<body>
+    <!-- header -->
+    <header class="container-fluid header">
+      <div class="container">
+          <a href="#" class="logo"> Bienvenue sur Mon portfolio | alexis rossignol</a>
+          <nav class="menu">
+              <a href="#"> Accueil </a>
+              <a href="#presentation"> Présentation </a>
+              <a href="#entreprise"> Entreprise </a>
+              <a href="#portfolio"> Portfolio </a>
+              <a href="#contact"> Contact </a>
+          </nav>  
+      </div>
+
+
+    </header>
+    <!-- fin header -->
+
+    <!-- bannière -->
+    <section class="container-fluid banner">
+      <div class="ban">
+          <img src="img/ban.jpg" alt="bannière du site" />
+      </div>
+      <div class="inner-banner">
+          <img src="img/pp.png" width="10%">
+          <h1> Alexis Rossignol </h1>
+          <a href="#contact"><button class="btn btn-custom"> Contactez moi ici </button></a>
+      </div>
+    </section>
+    <!-- fin bannière -->
+    
+    <!-- présentation -->
+    <section class="container-fluid presentation">
+      <div class="container container_presentation">
+        <h1 id="presentation"> Présentation </h1>
+        <hr class="separator">
+        <div class="row presentation_flex">
+          <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12" id="article_presentation">
+            <a target="_blank" href="docs/CV_Rossignol_Alexis.pdf"><button class="cv"><img src="img/cv.png" width="40%"> <br>Cliquez ici pour ouvrir mon CV </button></a>
+          </article>
+          <article class="block_presentation_flex">
+            <div class="tab">
+              <table width="100%">
+                <tr>
+                  <td><center>Nom :</center></td>
+                  <td><center>Rossignol</center></td>
+                </tr>
+                <tr>
+                  <td><center>Prénom :</center></td>
+                  <td><center>Alexis</center></td>
+                </tr>
+                <tr>
+                  <td><center>Âge :</center></td>
+                  <td><center>21 ans</center></td>
+                </tr>
+                <tr>
+                  <td><center>Langue :</center></td>
+                  <td><center>Français</center></td>
+                </tr>
+                <tr>
+                  <td><center>Études :</center></td>
+                  <td><center>Developpement informatique</center></td>
+                </tr>
+              </table>
+            </div>
+            
+          </article>
+        </div>
+
+      </div>
+    </section>
+    <!-- finprésentation -->
+
+    <!-- entreprise -->
+    <section class="container-fluid entreprise">
+      <div class="container">
+        <h1 id="entreprise"> Mon entreprise </h1>
+        <hr class="separator">
+      <div id="responsive_flex" class="entreprise_flex">
+        <div class="row entreprise_flex">
+          <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12 center_entreprise_block" id="width_block_entreprise">
+            <h2 style="margin-bottom: 5%;"> Domaine CHR </h2>
+            <p><img src="img/chr master.png" width="10%"> CHR catering international est une société à responsabilité limitée possédant plusieurs filliales comme CHR Master ou Stock direct CHR qui est l'entreprise pour laquelle je travaille.</p>
+            <p> L'entreprise est en activité depuis 5 ans et est domicilié à Clairoix.</p>
+            <p>C'est une entreprise de revente de matériels de restauration professionnels.</p>
+            <p><img src="img/diamond.png" width="10%"> Nous sommes donc en relation avec les plus gros fournisseurs internationaux de matériels de restauration professionnels tels que Diamond ou encore Combisteel.</p>
+            <p><img src="img/sdc.png" width="10%"> Nous possédons un site internet sous le nom de Stock Direct CHR sur lequel il y a plus de 100 marques de produits disponibles pour plus de 50 000 produits ajoutés sur le site.</p>
+            <p>Mon rôle dans l'entreprise est de maintenir la gestion des produits sur le site, cela comprend aussi de gérer le référencement des produits pour être le plus visible sur la toile.</p>
+          </article>
+          <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12 center_entreprise_block" >
+            <h2 style="margin-bottom: 5%;"> Site Stock Direct CHR </h2>
+            <button class="screen"><a target="_blank" href="https://www.stock-direct-chr.com"><img src="docs/ScreenSDC.png" width="100%" style="border-radius: 20px"></a><br><br><span style="color: #d19a9a;"> Cliquez ici pour accéder au site </span></button>
+          </article>
+        </div>
+        <div class="row width_row_projet">
+          <article class="col-md-3 col-lg-4 col-xs-12 col-sm-12 block_none">
+
+          </article>
+          <article class="col-md-6 col-lg-4 col-xs-12 col-sm-12 center_projet">
+              <h2 style="text-align: center; margin-bottom: 10%;"> Projets </h2>
+              <button id="btnPopup_projets_e" class="btnPopup_projets_e"><img src="img/proj_p.png" width="100%"></button>
+          </article>
+          <article class="col-md-3 col-lg-4 col-xs-12 col-sm-12 block_none">
+            
+          </article>
+        </div>
+      </div>
+       
+      </div>
+    </section>
+    <!-- fin entreprise -->
+
+    <!-- portfolio -->
+    <section class="container-fluid portfolio">
+      <div class="container">
+        <h1 id="portfolio"> Mon Portfolio </h1>
+        <hr class="separator">
+        <div class="row portfolio_flex">
+          <article class="col-md-4 col-lg-4 col-xs-12 col-sm-4 item-folio article_portfolio">
+            <div class="block_border">
+            <h2 style="text-align: center; margin-bottom: 8%;"> Parcours </h2>
+            <p><img src="img/diplome.png" width="8%"> Diplôme du baccalauréat scientifique option sciences de l'ingénieur spécialité mathématiques obtenu au Lycée Marie Curie (2018-2019)</p>
+            <p><img src="img/iut.png" width="11%"> Une année en DUT Génie Civil à l'IUT d'Amiens (2019-2020)</p>
+            <p><img src="img/promeo.png" width="7%"> BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers au centre de Formation Proméo à Compiègne en cours (2021-2023)</p>
+            </div>
+          </article>
+          <article class="col-md-4 col-lg-4 col-xs-12 col-sm-4 item-folio">
+            <div class="block_border">
+            <h2 style="text-align: center; margin-bottom: 8%;"> Compétences </h2>
+            <p><img src="img/html.png" width="9.5%"><img src="img/html.png" width="9.5%"><img src="img/html.png" width="9.5%"><img src="img/html.png" width="9.5%"><img src="img/htmlvide.png" width="9.5%"></p>
+            <p><img src="img/css.png" width="7.2%" style="margin-right: 2%;"><img src="img/css.png" width="7.2%" style="margin-right: 1%;"><img src="img/cssvide.png" width="10%"><img src="img/cssvide.png" width="10%"><img src="img/cssvide.png" width="10%"></p>
+            <p><img src="img/mysql.png" width="18%"><img src="img/mysql.png" width="18%"><img src="img/mysql.png" width="18%" style="margin-right: 2%;"><img src="img/mysqlvide.png" width="11%" style="margin-right: 4%;"><img src="img/mysqlvide.png" width="11%"></p>
+            <p><img src="img/php.png" width="12%" style="margin-right: 2%;"><img src="img/php.png" width="12%" style="margin-right: 2%;"><img src="img/php.png" width="12%" style="margin-right: 2%;"><img src="img/phpvide.png" width="11%" style="margin-right: 2%;"><img src="img/phpvide.png" width="11%"></p>
+            <p><img src="img/js.png" width="8%" style="margin-right: 2%;"><img src="img/jsvide.png" width="10%"><img src="img/jsvide.png" width="10%"><img src="img/jsvide.png" width="10%"><img src="img/jsvide.png" width="10%"></p>
+            <p><img src="img/pythontest.png" width="11%"><img src="img/pythontest.png" width="11%"><img src="img/pythontest.png" width="11%"><img src="img/pythonvide.png" width="10%"><img src="img/pythonvide.png" width="10%"></p>
+          </div>
+          </article>
+          <article class="col-md-4 col-lg-4 col-xs-12 col-sm-4 item-folio">
+            <div class="block_border">
+            <h2 style="text-align: center; margin-bottom: 15%;"> Expériences </h2>
+            <p><img src="img/parc astérix.png" width="13%"> Opérateur au Parc Astérix (Juin 2021-Octobre 2021)</p>
+            <br/><p><img src="img/armée de terre.png" width="11%"> 3 mois de classes militaire (Decembre 2020-Fevrier 2021)</p>
+            <br/><p><img src="img/sdc.png" width="15%"> BTS SIO SLAM en alternance dans l'entreprise CHR Catering International en cours (2021-2023)</p>
+          </div>
+          </article>
+        </div>
+        <div class="row">
+          <article class="col-md-3 col-lg-3 col-xs-12 col-sm-3 item-folio">
+          </article>
+          <article class="col-md-6 col-lg-6 col-xs-12 col-sm-6 item-folio">
+            <h2 style="text-align: center; margin-bottom: 10%; margin-top: 20%; color: #d19a9a;"> Projets </h2>
+            <button id="btnPopup_projets_p" class="btnPopup_projets_p"><img src="img/proj_p.jpg" width="100%"></button>
+          </article>
+          <article class="col-md-3 col-lg-3 col-xs-12 col-sm-3 item-folio">
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- fin portfolio -->
+
+    <!-- footer / contact -->
+    <footer class="container-fluid footer">
+        <div class="container">
+            <div class="row" style="flex-direction: column !important;">
+              <div class="col-md-6 col-xs-12 col-sm-12 col-md-offset-3" style="margin-top: 40%;">
+                <h2 id="contact" style="color: #d19a9a;"> ici pour me contacter </h2>
+              </div>
+           
+              <div class="col-md-6 col-xs-12 col-sm-12 col-md-offset-3">
+                <div class="well well-sm" style="border-radius: 20px; margin-bottom: 20%; background-color: #223558; border: none; color: #d19a9a;">
+                  <form class="form-horizontal" action="contact.php" method="post">
+                  <fieldset>
+                    <legend class="text-center" style="color: #d19a9a;"> Contactez moi ! </legend>
+            
+                    <!-- Name input-->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="name"> Nom </label>
+                      <div class="col-md-9">
+                        <input id="name" name="name" type="text" placeholder="Nom" class="form-control" required>
+                      </div>
+                    </div>
+            
+                    <!-- Email input-->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="email"> Adresse email </label>
+                      <div class="col-md-9">
+                        <input id="email" name="email" type="text" placeholder="Email" class="form-control" required>
+                      </div>
+                    </div>
+            
+                    <!-- Message body -->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="message"> Message </label>
+                      <div class="col-md-9">
+                        <textarea class="form-control" id="message" name="message" placeholder="Écris moi un petit mot" rows="5" required></textarea>
+                      </div>
+                    </div>
+            
+                    <!-- Form actions -->
+                    <div class="form-group">
+                      <div class="col-md-12 text-right">
+                        <button type="submit" class="btn btn-custom"> Soumettre </button>
+                      </div>
+                    </div>
+                  </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+         
+            <div class="row2">
+              <div class="col-md-3 col-lg-3 col-xs-12 col-sm-3 item-row2">
+                <button type="submit" class="btn btn-custom"><a target="_blank" href="https://github.com/AlexisRsgl"><img src="img/github.png" width="40%"> Github </a></button>
+              </div>
+              <div class="col-md-3 col-lg-3 col-xs-12 col-sm-3 item-row2">
+                <button type="submit" class="btn btn-custom"><a target="_blank" href="https://www.youtube.com/channel/UC8K-Y6lso9RuxGR8zYNRw2A"><img src="img/youtube.png" width="40%"> Youtube </a></button>
+              </div>
+              <div class="col-md-3 col-lg-3 col-xs-12 col-sm-3 item-row2">
+                <button type="submit" class="btn btn-custom"><a target="_blank" href="https://www.linkedin.com/in/alexis-rossignol-4a1872206/"><img src="img/linkedin.png" width="35%"> Linkedin </a></button>
+              </div>
+              <div class="col-md-3 col-lg-3 col-xs-12 col-sm-3 item-row2">
+                <button type="submit" class="btn btn-custom"><a target="_blank" href="https://tiktok.com/@alexisrsgl"><img src="img/tiktok.png" width="44%"> Tiktok </a></button>
+              </div>
+            </div>
+        </div>
+    </footer>
+    <!-- fin footer -->
+  
+    <!-- overlay projets -->
+    <div id="overlay_projets_e" class="overlay" style="font-family: 'Comfortaa', cursive;">
+      <div id="popup_projets_e" class="popup">
+        <h2 style="margin-bottom: 2%; text-align: center; color: #587aba;">Projets Entreprise
+        <span id="btnClose_projets_e" class="btnClose">&times;</span></h2>
+        <p class="para_overlay">Dans le cadre de mon travail je suis ammené à trouver des solutions pour faciliter la gestion des produits, cela comporte notamment les images ou le stock en direct des produits. Le stock est disponible sur différents sites des fournisseurs en étant connecté.</p>
+        <p class="para_overlay">Les programmes sont codés en python du fait de sa simplicité et de son efficacité. J'ai également accés à des exports en excel donc les produits sont référencés et il y a toutes les données de chaque produit.</p><br>
+        <div class="row3">
+          <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+            <p style="color: #587aba;">Les BOTS</p>
+            <p class="para_overlay">Programmes permettant de récupérer le stock des produits sur les sites des fournisseurs.</p>
+            <p class="para_overlay">Grâce à plusieurs libraries et un bot, nous pouvons naviguer sur le site à la recherche de tous les produits à l'aide d'un tableau excel avec toutes les références des produits.</p>
+            <p class="para_overlay">Nous utilisons actuellement 2 bots, celui d'AFI et de Casselin, le dernier Atosa est en cours.</p><br>
+            <p style="color: #587aba;">API Diamond</p>
+            <p class="para_overlay">Nous utilisons l'API Diamond sur Postman pour obtenir toutes les données de tous les produits en simulant une connexion, nous obtenons un fichier json avec donc toutes les données des produits tels que les descriptions, les liens des images ou des documents ou encore les caractéristiques.</p>
+            <p class="para_overlay">A l'aide de ce fichier, nous pouvons obtenir toutes les données en fichier excel pour importer sur notre site.</p>
+          </article>
+          <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+            <a target="_blank" href="Bot_AFI.html"><button class="btn_row3"><img src="img/afi.png" width="40%"><br> Bot AFI</button></a><br><br>
+            <a target="_blank" href="Bot_Casselin.html"><button class="btn_row3"><img src="img/casselin.png" width="46%"><br> Bot Casselin</button></a><br><br>
+            <a target="_blank" href="Bot_Atosa.html"><button class="btn_row3"><img src="img/atosa.png" width="48%"><br> Bot Atosa</button></a><br><br>
+            <a target="_blank" href="API_Diamond.html"><button class="btn_row3"><img src="img/diamond.png" width="44%"><br> API Diamond</button></a>
+          </article>
+        </div>
+      </div>
+    </div>
+    <script>
+      var btnPopup_projets_e = document.getElementById('btnPopup_projets_e');
+      var overlay_projets_e = document.getElementById('overlay_projets_e');
+      var btnClose_projets_e = document.getElementById('btnClose_projets_e');
+
+      btnPopup_projets_e.addEventListener('click', openProjetsE);
+
+      btnClose_projets_e.addEventListener('click', closeProjetsE);
+
+      function openProjetsE(){
+        overlay_projets_e.style.display = 'block';
+      }
+
+      function closeProjetsE(){
+        overlay_projets_e.style.display = 'none';
+      }
+    </script>
+
+<div id="overlay_projets_p" class="overlay" style="font-family: 'Comfortaa', cursive;">
+  <div id="popup_projets_p" class="popup">
+    <h2 style="margin-bottom: 5%; text-align: center; color: #587aba;">Projets Personnels
+    <span id="btnClose_projets_p" class="btnClose">&times;</span></h2>
+      <p class="para_overlay">Durant mes études en BTS SIO, j'ai été amené à faire des projets pour mieux comprendre et apprendre différents languages de programmation.</p><br>
+      <div class="row4">
+        <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+          <p style="color: #587aba;">Mobile API</p>
+          <p class="para_overlay">Un projet codé en PHP pour l'API, sur Ionic pour le Mobile et Axios pour rélier les deux.</p>
+          <p class="para_overlay">Le projet consiste à ce que l'utilisateur puisse faire sa propre liste de course avec une liste de produits créés au préalable.</p><br>
+          <p style="color: #587aba;">Palyndrome</p>
+          <p class="para_overlay">En études, j'ai fait plusieurs projets sur Pycharm en python dont le palyndrome.</p>
+          <p class="para_overlay">Ce programme consiste à taper un mot et le programme affirmera si ce mot peut se lire à l'endroit comme à l'envers.</p><br>
+          <p style="color: #587aba;">Projet tâche</p>
+          <p class="para_overlay">Ce petit projet possède du code en javascript.</p>
+          <p class="para_overlay">Le but étant d'ajouter des tâches, tout ceci en javascript, il n'y donc pas de php et de sql.</p>
+        </article>
+        <article class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+          <a target="_blank" href="Mobile_API.html"><button class="btn_row3"><img src="img/mobile.png" width="35%"><br>Mobile API</button></a><br><br>
+          <a target="_blank" href="Palyndrome.html"><button class="btn_row3"><img src="img/python.png" width="30%"><br>Palyndrome</button></a><br><br>
+          <a target="_blank" href="Projet_tache.html"><button class="btn_row3"><img src="img/js.png" width="24%"><br>Projet tâche</button></a>
+        </article>
+      </div>
+  </div>
+</div>
+<script>
+  var btnPopup_projets_p = document.getElementById('btnPopup_projets_p');
+  var overlay_projets_p = document.getElementById('overlay_projets_p');
+  var btnClose_projets_p = document.getElementById('btnClose_projets_p');
+
+  btnPopup_projets_p.addEventListener('click', openProjetsP);
+
+  btnClose_projets_p.addEventListener('click', closeProjetsP);
+
+  function openProjetsP(){
+    overlay_projets_p.style.display = 'block';
+  }
+
+  function closeProjetsP(){
+    overlay_projets_p.style.display = 'none';
+  }
+</script>
+</body>
+</html>

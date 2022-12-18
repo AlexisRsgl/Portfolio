@@ -1,0 +1,79 @@
+/* Responsive */
+
+@media screen and (max-width: 1280px){
+    body{
+        font-size: 3rem !important;
+    }
+    .logo {
+        display: none;
+    }
+    .menu {
+        float: left;
+    }
+    .inner-banner {
+        top: 10%;
+    }
+    .responsive_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .presentation_flex{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .block_presentation_flex{
+        width: 100%;
+    }
+    .container_presentation{
+        width: 100% !important;
+        max-width: 100%;
+    }
+    #article_presentation{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+    }
+    .entreprise_flex{
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+    }
+    .entreprise{
+        width: 100%;
+    }
+    .entreprise_flex{
+        width: 140%;
+        margin-left: -45%;
+    }
+    .center_entreprise_block{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .center_projet{
+        margin-left: 45%;
+        margin-right: auto;
+    }
+    .container{
+        max-width: 100% !important;
+    }
+    .block_none{
+        display: none;
+    }
+    .width_row_projet{
+        width: 100%;
+    }
+    .portfolio_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .article_portfolio{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+   
+}
