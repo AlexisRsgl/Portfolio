@@ -11,7 +11,7 @@ Bleu fort : #4429F2 */
 
 /*
 Nouvelles couleurs :
-Noir : black
+Noir : rgb(20, 20, 20)
 Bleu clair : #587aba
 Bleu foncé : #223558
 Saumon : #d19a9a
@@ -118,7 +118,7 @@ a, a:hover {
 
 .inner-banner .btn-custom {
     background-color: #d19a9a;
-    color: black;
+    color: rgb(20, 20, 20);
     border-radius: 20px;   
 }
 
@@ -131,7 +131,7 @@ a, a:hover {
 
 .tab {
     background-color: rgb(218, 218, 218);
-    color: black;
+    color: rgb(20, 20, 20);
     border-radius: 20px;
 }
 
@@ -157,7 +157,7 @@ a, a:hover {
 
 .cv {
     text-decoration: none;
-    color: black;
+    color: rgb(20, 20, 20);
     background-color: #223558;
     height: 100%;
     width: 100%; 
@@ -191,6 +191,7 @@ a, a:hover {
 .entreprise button {
     background: #223558;
     border-radius: 20px;
+    width: 100%;
     border: none;
     transition: 0.3s ease-in 0s;
 }
@@ -199,6 +200,24 @@ a, a:hover {
     background: #587aba;
     transform: scale(1.1);
     transition: 0.3s ease-in 0s;
+}
+
+.btnPopup_projets_e {
+    background: black !important;
+    border-radius: 20px;
+    width: 100%;
+    border: none;
+    transition: 0.3s ease-in 0s;
+}
+
+.btnPopup_projets_e:hover {
+    background: black !important;
+    transform: scale(1.1);
+    transition: 0.3s ease-in 0s;
+}
+
+.entreprise button img{
+    border-radius: 20px;
 }
 
 .entreprise article h2 {
@@ -275,7 +294,7 @@ a, a:hover {
 }
 
 #contact {
-    color: black;
+    color: rgb(20, 20, 20);
     text-align: center;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -329,7 +348,7 @@ a, a:hover {
 
 .row2 button {
     background-color: #d19a9a;
-    color: black;
+    color: rgb(20, 20, 20);
     border-radius: 20px;
     text-align: center;
     width: 50%;
@@ -350,7 +369,7 @@ a, a:hover {
 
 .row2 a {
     text-decoration: none;
-    color: black;
+    color: rgb(20, 20, 20);
 }
 
 .row2 a:hover {
@@ -405,7 +424,7 @@ a, a:hover {
     border-radius: 20px;
     border: none;
     text-decoration: none;
-    color: black;
+    color: rgb(20, 20, 20);
 }
 
 .btn_row3:hover {
