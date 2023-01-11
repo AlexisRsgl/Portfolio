@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="img/ban.jpg" width="150%"/>
+  <link rel="icon" href="img/pp_icon.png" width="150%"/>
   <title> Portfolio | Alexis Rossignol </title>
 
   <!-- Police d'écriture -->
@@ -25,7 +25,7 @@
     <!-- header -->
     <header class="container-fluid header">
       <div class="container">
-          <a href="#" class="logo"> Bienvenue sur Mon portfolio | alexis rossignol</a>
+          <a href="#" class="logo"> Bienvenue sur Mon portfolio | alexis rossignol </a>
           <nav class="menu">
               <a href="#"> Accueil </a>
               <a href="#presentation"> Présentation </a>
@@ -46,7 +46,7 @@
       </div>
       <div class="inner-banner">
           <img src="img/pp.png" width="10%">
-          <h1> Alexis Rossignol </h1>
+          <h1> Alexis Rossignol <br>Alternant BTS SIO</h1>
           <a href="#contact"><button class="btn btn-custom"> Contactez moi ici </button></a>
       </div>
     </section>
@@ -185,52 +185,57 @@
     <footer class="container-fluid footer">
         <div class="container">
             <div class="row" style="flex-direction: column !important;">
-              <div class="col-md-6 col-xs-12 col-sm-12 col-md-offset-3 col-xl-12" style="margin-top: 40%;">
-                <h2 id="contact" style="color: #d19a9a;"> ici pour me contacter </h2>
-              </div>
-           
-              <div class="col-md-6 col-xs-12 col-sm-12 col-md-offset-3">
-                <div class="well well-sm" style="border-radius: 20px; margin-bottom: 20%; background-color: #223558; border: none; color: #d19a9a;">
-                  <form class="form-horizontal" action="contact.php" method="post">
-                  <fieldset>
-                    <legend class="text-center" style="color: #d19a9a;"> Contactez moi ! </legend>
-            
-                    <!-- Name input-->
-                    <div class="form-group">
-                      <label class="col-md-3 control-label" for="name"> Nom </label>
-                      <div class="col-md-9">
-                        <input id="name" name="name" type="text" placeholder="Nom" class="form-control" required>
-                      </div>
-                    </div>
-            
-                    <!-- Email input-->
-                    <div class="form-group">
-                      <label class="col-md-3 control-label" for="email"> Adresse email </label>
-                      <div class="col-md-9">
-                        <input id="email" name="email" type="text" placeholder="Email" class="form-control" required>
-                      </div>
-                    </div>
-            
-                    <!-- Message body -->
-                    <div class="form-group">
-                      <label class="col-md-3 control-label" for="message"> Message </label>
-                      <div class="col-md-9">
-                        <textarea class="form-control" id="message" name="message" placeholder="Écris moi un petit mot" rows="5" required></textarea>
-                      </div>
-                    </div>
-            
-                    <!-- Form actions -->
-                    <div class="form-group">
-                      <div class="col-md-12 text-right">
-                        <button type="submit" class="btn btn-custom"> Soumettre </button>
-                      </div>
-                    </div>
-                  </fieldset>
-                  </form>
+              <div class="col-md-6 col-xs-12 col-sm-12 col-md-offset-3" style="margin-top: 40%;">
+                <div class="contact-responsive">
+                  <h2 id="contact" style="color: #d19a9a;"> ici pour me contacter </h2>
                 </div>
               </div>
-            </div>
-         
+
+              <div id="contact_width">
+                <div id="center_contact">
+                  <div class="col-md-6 col-xs-12 col-sm-12 col-md-offset-3">
+                    <div class="well well-sm" style="border-radius: 20px; margin-bottom: 20%; background-color: #223558; border: none; color: #d19a9a;">
+                      <form class="form-horizontal" action="contact.php" method="post">
+                      <fieldset>
+                        <legend class="text-center" style="color: #d19a9a;"> Contactez moi ! </legend>
+                
+                        <!-- Name input-->
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="name"> Nom </label>
+                          <div class="col-md-9 width_input">
+                            <input id="name" name="name" type="text" placeholder="Nom" class="form-control" required>
+                          </div>
+                        </div>
+                      <!-- Email input-->
+                      <div class="form-group">
+                        <label class="col-md-3 control-label" for="email"> Adresse email </label>
+                        <div class="col-md-9 width_input">
+                          <input id="email" name="email" type="text" placeholder="Email" class="form-control" required>
+                        </div>
+                      </div>
+              
+                      <!-- Message body -->
+                      <div class="form-group">
+                        <label class="col-md-3 control-label" for="message"> Message </label>
+                        <div class="col-md-9 width_input">
+                          <textarea class="form-control" id="message" name="message" placeholder="Écris moi un petit mot" rows="5" required></textarea>
+                        </div>
+                      </div>
+              
+                      <!-- Form actions -->
+                      <div class="form-group">
+                        <div class="col-md-12 text-right">
+                          <button type="submit" class="btn btn-custom"> Soumettre </button>
+                        </div>
+                      </div>
+                    </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+                </div>
+              </div>
+               
             <div class="row2">
               <div class="col-md-3 col-lg-3 col-xs-12 col-sm-3 item-row2">
                 <button type="submit" class="btn btn-custom"><a target="_blank" href="https://github.com/AlexisRsgl"><img src="img/github.png" width="40%"> Github </a></button>
