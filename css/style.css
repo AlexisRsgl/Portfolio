@@ -55,6 +55,13 @@ a, a:hover {
     position: fixed;
     z-index: 1;
     font-family: 'Comfortaa', cursive;
+    opacity: 1;
+    animation: header 5s;
+}
+
+@keyframes header {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .logo {
@@ -109,6 +116,13 @@ a, a:hover {
     left: 0;
     width: 100%;
     text-align: center;
+    opacity: 1;
+    animation: inner-banner 5s;
+}
+
+@keyframes inner-banner {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .inner-banner h1 {
@@ -138,6 +152,11 @@ a, a:hover {
 .tab td {
     padding: 15px;
     border-collapse: collapse;
+}
+
+.container_presentation {
+    opacity: 0;
+    transition: opacity 6s;
 }
 
 .presentation {
@@ -175,6 +194,11 @@ a, a:hover {
 /* entreprise */
 .screen  {
     text-decoration: none;
+}
+
+.container_entreprise {
+    opacity: 0;
+    transition: opacity 6s;
 }
 
 .entreprise {
@@ -235,6 +259,11 @@ a, a:hover {
 
 /* portfolio */
 
+.container_portfolio {
+    opacity: 0;
+    transition: opacity 6s;
+}
+
 .portfolio {
     height: 700px;
     background-color: rgb(20, 20, 20) !important;
@@ -287,6 +316,11 @@ a, a:hover {
 }
 
 /* footer */
+
+.container_footer {
+    opacity: 0;
+    transition: opacity 6s;
+}
 
 .footer {
     background-color: rgb(20, 20, 20);
@@ -437,4 +471,3 @@ a, a:hover {
 .para_overlay {
     color: #d19a9a;
 }
-

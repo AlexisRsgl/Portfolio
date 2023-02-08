@@ -96,11 +96,27 @@
 
       </div>
     </section>
+    <script>
+      window.addEventListener("scroll", function() {
+        var elements = document.querySelectorAll(".container_presentation");
+        var windowHeight = window.innerHeight;
+
+        for (var i = 0; i < elements.length; i++) {
+          var element = elements[i];
+          var elementHeight = element.offsetHeight;
+          var elementTop = element.getBoundingClientRect().top;
+
+          if (elementTop <= windowHeight) {
+            element.style.opacity = 1;
+          }
+        }
+      });
+    </script>
     <!-- finprésentation -->
 
     <!-- entreprise -->
     <section class="container-fluid entreprise">
-      <div class="container">
+      <div class="container container_entreprise">
         <h1 id="entreprise"> Mon entreprise </h1>
         <hr class="separator">
       <div id="responsive_flex" class="entreprise_flex">
@@ -135,32 +151,48 @@
        
       </div>
     </section>
+    <script>
+      window.addEventListener("scroll", function() {
+        var elements = document.querySelectorAll(".container_entreprise");
+        var windowHeight = window.innerHeight;
+
+        for (var i = 0; i < elements.length; i++) {
+          var element = elements[i];
+          var elementHeight = element.offsetHeight;
+          var elementTop = element.getBoundingClientRect().top;
+
+          if (elementTop <= windowHeight) {
+            element.style.opacity = 1;
+          }
+        }
+      });
+    </script>
     <!-- fin entreprise -->
 
     <!-- portfolio -->
     <section class="container-fluid portfolio">
-      <div class="container">
+      <div class="container container_portfolio">
         <h1 id="portfolio"> Mon Portfolio </h1>
         <hr class="separator">
         <div class="row portfolio_flex">
           <article class="col-md-4 col-lg-4 col-xs-12 col-sm-6 item-folio article_portfolio">
             <div class="block_border">
-            <h2 style="text-align: center; margin-bottom: 8%;"> Parcours </h2>
-            <p><img src="img/diplome.png" width="8%"> Diplôme du baccalauréat scientifique option sciences de l'ingénieur spécialité mathématiques obtenu au Lycée Marie Curie (2018-2019)</p>
-            <p><img src="img/iut.png" width="11%"> Une année en DUT Génie Civil à l'IUT d'Amiens (2019-2020)</p>
-            <p><img src="img/promeo.png" width="7%"> BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers au centre de Formation Proméo à Compiègne en cours (2021-2023)</p>
+              <h2 style="text-align: center; margin-bottom: 8%;"> Parcours </h2>
+              <p><img src="img/diplome.png" width="8%"> Diplôme du baccalauréat scientifique option sciences de l'ingénieur spécialité mathématiques obtenu au Lycée Marie Curie (2018-2019)</p>
+              <p><img src="img/iut.jpg" width="11%"> Une année en DUT Génie Civil à l'IUT d'Amiens (2019-2020)</p>
+              <p><img src="img/promeo.png" width="7%"> BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers au centre de Formation Proméo à Compiègne en cours (2021-2023)</p>
             </div>
           </article>
           <article class="col-md-4 col-lg-4 col-xs-12 col-sm-6 item-folio">
             <div class="block_border">
-            <h2 style="text-align: center; margin-bottom: 8%;"> Compétences </h2>
-            <p><img src="img/html.png" width="9.5%"><img src="img/html.png" width="9.5%"><img src="img/html.png" width="9.5%"><img src="img/html.png" width="9.5%"><img src="img/htmlvide.png" width="9.5%"></p>
-            <p><img src="img/css.png" width="7.2%" style="margin-right: 2%;"><img src="img/css.png" width="7.2%" style="margin-right: 1%;"><img src="img/cssvide.png" width="10%"><img src="img/cssvide.png" width="10%"><img src="img/cssvide.png" width="10%"></p>
-            <p><img src="img/mysql.png" width="18%"><img src="img/mysql.png" width="18%"><img src="img/mysql.png" width="18%" style="margin-right: 2%;"><img src="img/mysqlvide.png" width="11%" style="margin-right: 4%;"><img src="img/mysqlvide.png" width="11%"></p>
-            <p><img src="img/php.png" width="12%" style="margin-right: 2%;"><img src="img/php.png" width="12%" style="margin-right: 2%;"><img src="img/php.png" width="12%" style="margin-right: 2%;"><img src="img/phpvide.png" width="11%" style="margin-right: 2%;"><img src="img/phpvide.png" width="11%"></p>
-            <p><img src="img/js.png" width="8%" style="margin-right: 2%;"><img src="img/jsvide.png" width="10%"><img src="img/jsvide.png" width="10%"><img src="img/jsvide.png" width="10%"><img src="img/jsvide.png" width="10%"></p>
-            <p><img src="img/pythontest.png" width="11%"><img src="img/pythontest.png" width="11%"><img src="img/pythontest.png" width="11%"><img src="img/pythonvide.png" width="10%"><img src="img/pythonvide.png" width="10%"></p>
-          </div>
+              <h2 style="text-align: center; margin-bottom: 8%;"> Compétences </h2>
+              <p><img src="img/html.png" width="9.5%"><img src="img/html.png" width="9.5%"><img src="img/html.png" width="9.5%"><img src="img/html.png" width="9.5%"><img src="img/htmlvide.png" width="9.5%"></p>
+              <p><img src="img/css.png" width="7.2%" style="margin-right: 2%;"><img src="img/css.png" width="7.2%" style="margin-right: 1%;"><img src="img/cssvide.png" width="10%"><img src="img/cssvide.png" width="10%"><img src="img/cssvide.png" width="10%"></p>
+              <p><img src="img/mysql.png" width="18%"><img src="img/mysql.png" width="18%"><img src="img/mysql.png" width="18%" style="margin-right: 2%;"><img src="img/mysqlvide.png" width="11%" style="margin-right: 4%;"><img src="img/mysqlvide.png" width="11%"></p>
+              <p><img src="img/php.png" width="12%" style="margin-right: 2%;"><img src="img/php.png" width="12%" style="margin-right: 2%;"><img src="img/php.png" width="12%" style="margin-right: 2%;"><img src="img/phpvide.png" width="11%" style="margin-right: 2%;"><img src="img/phpvide.png" width="11%"></p>
+              <p><img src="img/js.png" width="8%" style="margin-right: 2%;"><img src="img/jsvide.png" width="10%"><img src="img/jsvide.png" width="10%"><img src="img/jsvide.png" width="10%"><img src="img/jsvide.png" width="10%"></p>
+              <p><img src="img/pythontest.png" width="11%"><img src="img/pythontest.png" width="11%"><img src="img/pythontest.png" width="11%"><img src="img/pythonvide.png" width="10%"><img src="img/pythonvide.png" width="10%"></p>
+            </div>
           </article>
           <article class="col-md-4 col-lg-4 col-xs-12 col-sm-6 item-folio">
             <div class="block_border">
@@ -183,11 +215,27 @@
         </div>
       </div>
     </section>
+    <script>
+      window.addEventListener("scroll", function() {
+        var elements = document.querySelectorAll(".container_portfolio");
+        var windowHeight = window.innerHeight;
+
+        for (var i = 0; i < elements.length; i++) {
+          var element = elements[i];
+          var elementHeight = element.offsetHeight;
+          var elementTop = element.getBoundingClientRect().top;
+
+          if (elementTop <= windowHeight) {
+            element.style.opacity = 1;
+          }
+        }
+      });
+    </script>
     <!-- fin portfolio -->
 
     <!-- footer / contact -->
     <footer class="container-fluid footer">
-        <div class="container">
+        <div class="container container_footer">
             <div class="row" style="flex-direction: column !important;">
               <div class="col-md-6 col-xs-12 col-sm-12 col-md-offset-3" style="margin-top: 40%;">
                 <div class="contact-responsive">
@@ -253,6 +301,22 @@
             </div>
         </div>
     </footer>
+    <script>
+      window.addEventListener("scroll", function() {
+        var elements = document.querySelectorAll(".container_footer");
+        var windowHeight = window.innerHeight;
+
+        for (var i = 0; i < elements.length; i++) {
+          var element = elements[i];
+          var elementHeight = element.offsetHeight;
+          var elementTop = element.getBoundingClientRect().top;
+
+          if (elementTop <= windowHeight) {
+            element.style.opacity = 1;
+          }
+        }
+      });
+    </script>
     <!-- fin footer -->
   
     <!-- overlay projets -->

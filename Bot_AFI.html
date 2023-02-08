@@ -22,13 +22,15 @@
       <article class="col-md-2 col-lg-2 col-xs-12 col-sm-2" style="margin-top: 5%;">
       </article>
       <article class="col-md-8 col-lg-8 col-xs-12 col-sm-8" style="margin-top: 5%;">
-        <p style="color:white; text-align: center;">AFI Collin-Lucy est un des nombreux fournisseurs avec lesquels on travaille et possède un site internet sur lequel nous pouvons y retrouver tous leurs produits disponibles à la vente.
-        <br>Nous maintenons donc les produits à jour sur notre site, cela comprend la description, les images mais aussi les stocks.
-        <br>Nous essayons un maximum d'obtenir les stocks en temps réels pour pouvoir informer le client de la disponibilité du produit.
-        <br><br>Pour cela, certains fournisseurs sont gérés automatiquement mais d'autres comme AFI Collin Lucy ne l'est pas et donc il faut trouver un moyen rapide et efficace d'obtenir ces stocks.
-        <br>L'alternant me précédent a conçu un bot en python qui permet de naviguer sur le site à la recherche des références pour obtenir les stocks de chaque produit.
-        <br>Ce programme ayant eu de nombreux problèmes dû aux références qui peuvent changées, être supprimées ou encore être crées, j'ai dû le gérer et le modifier pour le garder à jour.
-        <br>Nous avons une base avec un fichier excel contenant toutes les références des produits AFI Collin Lucy.</p>
+        <div class="page_projet" style="background-color: rgb(212, 212, 212); border-radius: 10%; padding: 2%; height: 100%;">
+          <p style="color: #223558; text-align: center;">AFI Collin-Lucy est un des nombreux fournisseurs avec lesquels on travaille et possède un site internet sur lequel nous pouvons y retrouver tous leurs produits disponibles à la vente.
+          <br>Nous maintenons donc les produits à jour sur notre site, cela comprend la description, les images mais aussi les stocks.
+          <br>Nous essayons un maximum d'obtenir les stocks en temps réels pour pouvoir informer le client de la disponibilité du produit.
+          <br><br>Pour cela, certains fournisseurs sont gérés automatiquement mais d'autres comme AFI Collin Lucy ne l'est pas et donc il faut trouver un moyen rapide et efficace d'obtenir ces stocks.
+          <br>L'alternant me précédent a conçu un bot en python qui permet de naviguer sur le site à la recherche des références pour obtenir les stocks de chaque produit.
+          <br>Ce programme ayant eu de nombreux problèmes dû aux références qui peuvent changées, être supprimées ou encore être crées, j'ai dû le gérer et le modifier pour le garder à jour.
+          <br>Nous avons une base avec un fichier excel contenant toutes les références des produits AFI Collin Lucy.</p>
+        </div>
       </article>
       <article class="col-md-2 col-lg-2 col-xs-12 col-sm-2" style="margin-top: 5%;">
       </article>
@@ -46,12 +48,14 @@
       <article class="col-md-2 col-lg-2 col-xs-12 col-sm-2" style="margin-top: 10%; margin-bottom: 10%;">
       </article>
       <article class="col-md-8 col-lg-8 col-xs-12 col-sm-8" style="margin-top: 10%; margin-bottom: 10%;">
-        <p style="color:white; text-align: center;">A l'aide des librairies openpyxl et webdriver, nous pouvons analyser le fichier excel contenant toutes les références du fournisseur et naviguer sur le site à la recherche de chacunes d'entre elles pour récupérer la description de leur stock.
-        <br>La librairie tqdm permet de connaître en temps réel l'avancé du bot.
-        <br><br>Nous commençons le programme en chargant le fichier excel pour utiliser la feuille de ce fichier contenant donc toutes les références de chaque produits AFI par ligne.
-        <br>Ensuite, nous créons une nouvelle feuille dans laquelle nous pourrons réinscrire la référence ainsi que le stock et la date.
-        <br>Grâce à la librairie webdriver, nous pouvons lancer le navigateur chrome et entrer le lien du site AFI pour indiquer nos identifiants et se connecter (la connexion au compte nous permet de connaître la disponibilité des produits).
-        </p>
+        <div class="page-projet" style="background-color: rgb(212, 212, 212); border-radius: 10%; padding: 2%;">
+          <p style="color: #223558; text-align: center;">A l'aide des librairies openpyxl et webdriver, nous pouvons analyser le fichier excel contenant toutes les références du fournisseur et naviguer sur le site à la recherche de chacunes d'entre elles pour récupérer la description de leur stock.
+          <br>La librairie tqdm permet de connaître en temps réel l'avancé du bot.
+          <br><br>Nous commençons le programme en chargant le fichier excel pour utiliser la feuille de ce fichier contenant donc toutes les références de chaque produits AFI par ligne.
+          <br>Ensuite, nous créons une nouvelle feuille dans laquelle nous pourrons réinscrire la référence ainsi que le stock et la date.
+          <br>Grâce à la librairie webdriver, nous pouvons lancer le navigateur chrome et entrer le lien du site AFI pour indiquer nos identifiants et se connecter (la connexion au compte nous permet de connaître la disponibilité des produits).
+          </p>
+        </div>
       </article>
       <article class="col-md-2 col-lg-2 col-xs-12 col-sm-2" style="margin-top: 10%; margin-bottom: 10%;">
       </article>
@@ -69,11 +73,13 @@
       <article class="col-md-2 col-lg-2 col-xs-12 col-sm-2" style="margin-top: 10%; margin-bottom: 10%;">
       </article>
       <article class="col-md-8 col-lg-8 col-xs-12 col-sm-8" style="margin-top: 10%; margin-bottom: 10%;">
-        <p style="color:white; text-align: center;">Nous allons maintenant à l'aide de la commande for en python, parcourir chaque ligne de la feuille pour récupérer la donnée en cellule et l'envoyer dans l'input de recherche du site.
-        <br>Nous récupérons l'emplacement de l'input de recherche grâce au xpath que l'on obtient en inspectant l'élément.
-        <br>L'utilisation du try est essentiel car il se peut qu'il ait des références qui n'existent plus.
-        <br>Idem à l'aide du xpath, nous pouvons cliquer sur le bouton de recherche et analyser la disponibilité du produit
-        <br>Nous avons enfin la disponibilté avec le produit associé que nous pouvons ajouter dans notre nouvelle feuille stock</p>
+        <div class="page-projet" style="background-color: rgb(212, 212, 212); border-radius: 10%; padding: 2%;">
+          <p style="color:#223558; text-align: center;">Nous allons maintenant à l'aide de la commande for en python, parcourir chaque ligne de la feuille pour récupérer la donnée en cellule et l'envoyer dans l'input de recherche du site.
+          <br>Nous récupérons l'emplacement de l'input de recherche grâce au xpath que l'on obtient en inspectant l'élément.
+          <br>L'utilisation du try est essentiel car il se peut qu'il ait des références qui n'existent plus.
+          <br>Idem à l'aide du xpath, nous pouvons cliquer sur le bouton de recherche et analyser la disponibilité du produit
+          <br>Nous avons enfin la disponibilté avec le produit associé que nous pouvons ajouter dans notre nouvelle feuille stock</p>
+        </div>
       </article>
       <article class="col-md-2 col-lg-2 col-xs-12 col-sm-2" style="margin-top: 10%; margin-bottom: 10%;">
       </article>
