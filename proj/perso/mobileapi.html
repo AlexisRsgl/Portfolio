@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../../img/mobile.png" width="100%"/>
+    <link href="../../css/proj.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;700&family=Orbitron:wght@400;500;700&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Mobile API</title>
+</head>
+<header>
+    <h1>PROJET MOBILE API</h1>
+</header>
+<body>
+    <div class="top_body">
+        <img src="../img_proj/api.png">
+        <img src="../img_proj/application-mobile.jpg">
+        <div class="separator_top"></div>
+    </div>
+    <h2>PROJET</h2>
+    <div class="separator"></div>
+    <div class="projets">
+        <img src="../img_proj/courses.jpg" class="img_left">
+        <div class="txt_right">
+            <p>La projet consiste à ce que l'utilisateur puisse faire des courses sur son mobile et puisse gérer ses différentes listes de courses.</p>
+            <br><p>Pour ce faire, nous utiliserons laravel qui est un environnement de développement pour créer l'API qui servira à sécuriser nos requêtes dans la base de données.</p>
+            <br><p>Évidemment, nous utiliserons également Ionic pour pouvoir créer notre application sur mobile.</p>
+            <br><p>L'utilisation d'Axios sera aussi nécessaire dans le code pour faire appel à notre API laravel.</p>
+            <br><p>Nous aurons donc 2 projets différents qui seront séparés pour ensuite pouvoir les relier grâce à Axios. Il y aura donc d'un côté l'API laravel et de l'autre côté les requêtes Axios avec Ionic.</p>
+        </div>
+    </div>
+    <h2>API Laravel</h2>
+    <div class="separator"></div>
+    <div class="laravel">
+        <div class="txt_left">
+            <p>Tout d'abord, nous commençons un dossier pour l'api laravel dans laquelle nous disposerons les fonctionnalités de notre application et les chemins de ces actions appelés routes.</p>
+            <br><p>Nous allons créer différents Controllers que nous rendons disponible via une route. Ces routes seront ensuite appelées avec Axios dans le dossier Ionic</p>
+            <br><p>Il y a donc 2 Controllers, un pour les produits et l'autre pour les listes de course.</p>
+            <br><p>Dans le Controller des produits, nous aurons les fonctionnalités suivantes : Voir tous les produits d'une liste, Création, Modification et Suppression des produits.</p>
+            <br><p>Dans le Controller des listes de courses, nous aurons l'affichage de toutes les listes, la création, la modification, la suppression et enfin l'affichage des produits d'une liste.</p>
+        </div>
+        <img src="../img_proj/api_laravel.png" class="img_right">
+        <br><br><br><br>
+        <div class="separator"></div>
+        <img src="../img_proj/api_laravel(2).png" class="ligne_img">
+        <img src="../img_proj/api_laravel(3).png" class="ligne_img">
+        <img src="../img_proj/api_laravel(4).png" class="ligne_img">
+    </div>
+    <h2>Axios</h2>
+    <div class="separator"></div>
+    <div class="axios">
+        <img src="../img_proj/axios.jpg" class="img_left" height="20%">
+        <div class="txt_right">
+            <p>Après avoir créer les fonctionnalités avec l'api laravel, nous utilisons axios pour appeller les routes de l'api.</p>
+            <br><p>Nous créeons ainsi des requêtes en fonction des fonctionnalités pour pouvoir les réutiliser dans Ionic.</p>
+            <br><p>Nous avons donc la vue de toutes les produits d'une liste, la création, la modification et la supression des produits.</p>
+            <br><p>Pour ce qu'il s'agit des listes, nous avons l'affichage de toutes les listes, la création, la modification et la suppression.</p>
+            <br><p>Nous pouvons maintenant utiliser les requêtes depuis Ionic pour pouvoir obtenir les résultats de la base de données pour notre application mobile.</p>
+            <br><p>Et enfin nous sommes libre de faire le front de notre application avec Ionic.</p>
+        </div>
+        <br><br><br><br>
+        <div class="separator"></div>
+        <img src="../img_proj/ionic_course(1).png" class="ligne_img">
+        <img src="../img_proj/ionic_course(2).png" class="ligne_img">
+        <img src="../img_proj/ionic_course(3).png" class="ligne_img">
+        <img src="../img_proj/ionic_course(4).png" class="ligne_img">
+        <img src="../img_proj/ionic_course(5).png" class="ligne_img">
+    </div>
+    <br><br><br><br>
+    <div class="separator"></div>
+</body>
+</html>
