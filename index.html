@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none;}</style>
+
     <link rel="icon" href="img/pp5.png" width="100%"/>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
@@ -22,9 +24,6 @@
         <a href="#moi"><button>Moi</button></a>
         <a href="#entreprise"><button>Entreprise</button></a>
         <a href="#contact"><button>Contact</button></a>
-    </div>
-    <div id="separate">
-
     </div>
     <!-- présentation -->
     <div class="presentation">
@@ -95,16 +94,16 @@
                         <td>22 ans</td>
                     </tr>
                     <tr>
-                        <td>Langue :</td>
-                        <td>Français</td>
+                        <td>Études :</td>
+                        <td>Bac+2 Développement Informatique (en cours)</td>
                     </tr>
                     <tr>
-                        <td>Études :</td>
-                        <td>Développement Informatique</td>
+                        <td>Alternance :</td>
+                        <td>CHR Catering International</td>
                     </tr>
                     <tr>
                         <td>Tableau de synthèse :</td>
-                        <td><a href="">Cliquez ici</a></td>
+                        <td><a href="docs/Tableau_de_synthèse.pdf" target="_blank">Cliquez ici</a></td>
                     </tr>
                 </table>
             </div>
@@ -215,16 +214,17 @@
     <div class="entreprise" id="entreprise">
         <h1 class="sous_titles">Entreprise</h1>
             <div class="separator"></div>
+            <div class="main_firm">
             <div class="desc_entreprise">
                 <h1 class="sous_titles">Domaine CHR</h1>
                 <br><br><br><img src="img/chr master.png" width="10%">
-                <br><br><p>CHR catering international est une société à responsabilité limitée possédant plusieurs sites comme CHR Master ou Stock direct CHR.</p>
+                <br><br><p>CHR catering international est une société à responsabilité limitée possédant plusieurs sites dont CHR Master ou Stock direct CHR.</p>
                 <br><p>L'entreprise est en activité depuis 5 ans et est domicilié à Clairoix.</p>
                 <br><p>C'est une entreprise de revente de matériels de restauration professionnels.</p>
                 <br><br><p><img src="img/diamondsansfond.png" width="10%">
-                <br><p>Nous sommes donc en relation avec les plus gros fournisseurs internationaux de matériels de restauration professionnels tels que Diamond ou encore Combisteel.</p>
+                <br><br><p>Nous sommes donc en relation avec les plus grands fournisseurs internationaux de matériels de restauration professionnels tels que Diamond ou encore Combisteel.</p>
                 <br><br><img src="img/sdc.png" width="10%">
-                <br><br><p>Je suis responsable de la mise en ligne des produits sur Stock Direct CHR, le site sur lequel il comptabilise plus de 100 marques de produits disponibles pour plus de 50 000 produits ajoutés sur le site.</p>
+                <br><br><p>Je suis responsable de la mise en ligne des produits sur Stock Direct CHR, le site comptabilise plus de 100 marques de produits disponibles pour plus de 50 000 produits ajoutés sur le site.</p>
                 <br><p>Très récemment, nous avons mise en ligne un nouveau site du nom de BBR-CHR pour toucher un maximum de clientèle sur le web. Je suis également responsable de la mise en ligne des produits.</p>
                 <br><p>Mon rôle dans l'entreprise est de maintenir la gestion des produits sur les sites, cela comprend aussi de gérer le référencement des produits pour être le plus visible sur la toile.</p>
                 <br><br><a href="entreprise.html" target="_blank"   ><button class="btn_more">En savoir plus +</button></a>
@@ -235,6 +235,7 @@
                 <h1 class="sous_titles">BBR CHR</h1>
                 <button class="btn_website"><a target="_blank" href="https://www.stock-direct-chr.com"><img src="img/ScreenSDC.png"></a><br><br><span> Cliquez ici pour accéder au site </span></button>
             </div>
+        </div>
             <div class="projets_entreprise">
                 <h1 class="sous_titles">Projets</h1>
                 <div class="separator"></div>
@@ -254,7 +255,7 @@
                     </a>      
                     </li>
                     <li>
-                    <a href="" class="card">
+                    <a href="proj/entreprise/bot_casselin.html" target="_blank" class="card">
                         <img src="img/casselin.png" class="card__image" alt="" />
                         <div class="card__overlay">        
                         <div class="card__header">               
@@ -268,7 +269,7 @@
                     </a>
                     </li>
                     <li>
-                    <a href="" class="card">
+                    <a href="proj/entreprise/bot_atosa.html" target="_blank" class="card">
                         <img src="img/atosa.png" class="card__image" alt="" />
                         <div class="card__overlay">
                         <div class="card__header">
@@ -282,7 +283,7 @@
                     </a>
                     </li>
                     <li>
-                    <a href="" class="card">
+                    <a href="proj/entreprise/api_diamond.html" target="_blank" class="card">
                         <img src="img/diamond.png" class="card__image" alt="" />
                         <div class="card__overlay">
                         <div class="card__header">
@@ -305,19 +306,19 @@
         <div class="separator"></div>
         <div class="container">
             <h1>Contactez moi ci-dessous !</h1>
-            <form action="contact.php">
-              <label for="fname">Nom & prénom</label>
-              <input type="text" id="fname" name="firstname" placeholder="Nom et prénom">
+            <form action="contact.php" method="post">
+              <label for="firstname">Nom & prénom</label>
+              <input type="text" id="firstname" name="firstname" placeholder="Nom et prénom">
           
               <label for="sujet">Objet</label>
-              <input type="text" id="sujet" name="sujet" placeholder="Le sujet de votre message">
+              <input type="text" id="sujet" name="sujet" placeholder="Objet">
           
-              <label for="emailAddress">Email</label>
-              <input id="emailAddress" type="email" name="email" placeholder="Email">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="Email">
           
           
-              <label for="subject">Message</label>
-              <textarea id="subject" name="subject" placeholder="Dîtes moi tout..." style="height:100px"></textarea>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Dîtes moi tout..." style="height:100px"></textarea>
             <div class="btn_send">
               <input type="submit" value="Envoyer">
             </div>

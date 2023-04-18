@@ -14,15 +14,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;700&family=Orbitron:wght@400;500;700&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <title>BOT AFI</title>
+    <title>BOT Casselin</title>
 </head>
 <header>
-    <h1>PROJET BOT AFI</h1>
+    <h1>PROJET BOT Casselin</h1>
 </header>
 <body>
     <div class="top_body">
-        <img src="../img_proj/botafi2.jpg">
-        <img src="../img_proj/afi.png">
+        <img src="../img_proj/botcasselin2.png">
+        <img src="../img_proj/logocasselin.png">
         <div class="separator_top"></div>
     </div>
     <h2>PROJET</h2>
@@ -30,10 +30,10 @@
     <div class="projets">
         <img src="../img_proj/robot.jpg" class="img_left">
         <div class="txt_right">
-            <p>AFI Collin-Lucy est l'un des nombreux fournisseurs avec lesquels nous sommes en relation et possède un site internet sur lequel nous pouvons y retrouver tous leurs produits disponibles à la vente.</p>
+            <p>Casselin est l'un des nombreux fournisseurs français avec lesquels nous sommes en relation et possède un site internet sur lequel nous pouvons y retrouver tous leurs produits disponibles à la vente.</p>
             <br><p>Nous maintenons donc les produits à jour sur notre site, cela comprend la description, les images mais aussi les stocks.</p>
             <br><p>Nous essayons un maximum d'obtenir les stocks en temps réels pour pouvoir informer le client de la disponibilité du produit.</p>
-            <br><p>Pour cela, certains fournisseurs sont gérés automatiquement mais d'autres comme AFI Collin Lucy ne l'est pas et donc il faut trouver un moyen rapide et efficace d'obtenir ces stocks.</p>
+            <br><p>Pour cela, certains fournisseurs sont gérés automatiquement cependant d'autres comme Casselin ne le sont pas et donc il faut trouver un moyen rapide et efficace d'obtenir ces stocks.</p>
             <br><p>L'alternant me précédent a conçu un bot en python qui permet de naviguer sur le site à la recherche des références pour obtenir les stocks de chaque produit.</p>
         </div>
     </div>
@@ -42,15 +42,15 @@
     <div class="intro_afi">
         <div class="txt_left">
             <p>Ce programme ayant eu de nombreux problèmes dû aux références qui peuvent changées, être supprimées ou encore être crées, j'ai dû le gérer et le modifier pour le garder à jour.</p>
-            <br><p>Nous avons une base avec un fichier excel contenant toutes les références des produits AFI Collin Lucy inscrits sur le site Stock Direct CHR.</p>
+            <br><p>Nous avons une base avec un fichier excel contenant toutes les références des produits Casselin.</p>
             <br><p>A l'aide des librairies openpyxl et webdriver, nous pouvons analyser le fichier excel contenant toutes les références du fournisseur et naviguer sur le site à la recherche de chacunes d'entre elles pour récupérer la description de leur stock.</p>
             <br><p>La librairie tqdm permet de connaître en temps réel l'avancé du bot.</p>
-            <br><p>Nous commençons le programme en chargant le fichier excel pour utiliser la feuille de ce fichier contenant donc toutes les références de chaque produits AFI par ligne.</p>
+            <br><p>Nous commençons le programme en chargant le fichier excel pour utiliser la feuille de ce fichier contenant donc toutes les références de chaque produits Casselin par ligne.</p>     
         </div>
-        <img src="../img_proj/botafi.jpg" class="img_right">
+        <img src="../img_proj/botcasselin2.jpg" class="img_right">
         <br><br><br><br>
         <div class="separator"></div>
-        <img src="../img_proj/Screen Prog AFI.JPG" class="one_img">
+        <img src="../img_proj/Screen Prog Casselin.JPG" class="one_img">
     </div>
     <h2>Réalisation</h2>
     <div class="separator"></div>
@@ -58,10 +58,10 @@
         <img src="../img_proj/afi_img.jpg" class="img_left" height="20%">
         <div class="txt_right">
             <p>Ensuite, nous créons une nouvelle feuille dans laquelle nous pourrons réinscrire la référence ainsi que le stock et la date.</p>
-            <br><p>Grâce à la librairie webdriver, nous pouvons lancer le navigateur chrome et entrer le lien du site AFI pour indiquer nos identifiants et se connecter (la connexion au compte nous permet de connaître la disponibilité des produits).</p>
+            <br><p>Grâce à la librairie webdriver, nous pouvons lancer le navigateur chrome et entrer le lien du site Casselin pour indiquer nos identifiants et se connecter (la connexion au compte nous permet de connaître la disponibilité des produits).</p>
             <br><p>Nous allons maintenant à l'aide de la commande for en python, parcourir chaque ligne de la feuille pour récupérer la donnée en cellule et l'envoyer dans l'input de recherche du site.</p>
             <br><p>Nous récupérons l'emplacement de l'input de recherche grâce au xpath que l'on obtient en inspectant l'élément.</p>
-            <br><p>L'utilisation du try est essentiel car il se peut qu'il y ait des références qui n'existent plus.Idem à l'aide du xpath, nous pouvons cliquer sur le bouton de recherche et analyser la disponibilité du produit.</p>
+            <br><p>L'utilisation du try est essentiel car il se peut qu'il ait des références qui n'existent plus.</p>
         </div>
         <br><br><br><br>
         <div class="separator"></div>
@@ -70,7 +70,8 @@
     <br><br><br><br>
     <div class="separator"></div>
         <div class="solo_txt">
-            <br><p>Nous avons enfin la disponibilté avec le produit associé que nous pouvons ajouter dans notre nouvelle feuille stock.</p>
+            <p>Idem à l'aide du xpath, nous pouvons cliquer sur le bouton de recherche et analyser la disponibilité du produit</p>
+            <br><p>Nous avons enfin la disponibilté avec le produit associé que nous pouvons ajouter dans notre nouvelle feuille stock</p>    
             <br><br>
         </div>
     <div class="separator"></div>
