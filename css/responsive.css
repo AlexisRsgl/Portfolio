@@ -4,7 +4,7 @@
 
 body {
     font-size: 14px;
-    width: auto;
+    width: 100%;
     }
 
 /* présentation */
@@ -18,7 +18,245 @@ body {
     margin-bottom: 5%;
 }
 }
-    
+@media screen and (max-width: 1500px) {
+.cards {
+    display: none;
+}
+
+#bouton-menu {
+    display: none;
+}
+
+#menu-deroulant {
+    display: none;
+}
+
+.btn_contact button {
+    width: 20%;
+}
+
+.projets_perso_res {
+    display: block;
+    text-align: center;
+    margin-top: -45%;
+}
+
+.projets_perso_res img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.projets_perso_res button {
+    width: 50%;
+    border-radius: 30px;
+    background-color: black;
+    border: none;
+}
+
+.projets_entreprise_res {
+    display: block;
+    text-align: center;
+    margin-top: -60%;
+}
+
+.projets_entreprise_res img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.projets_entreprise_res button {
+    width: 50%;
+    border-radius: 30px;
+    background-color: black;
+    border: none;
+}
+
+.projets_entreprise_res span {
+    color: white;
+}
+
+.contact {
+    margin-top: 50%;
+}
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 10px;
+        width: 100%;
+        }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap; /* Afficher les éléments sur plusieurs lignes si besoin */
+        justify-content: center; /* Centrer les éléments horizontalement */
+    }
+
+    .menu a button {
+        width: 100%; /* Ajuster la largeur pour qu'elle occupe toute la largeur de l'écran */
+        margin-bottom: 10px; /* Ajouter une marge en bas pour séparer les éléments */
+    }
+
+    .menu a {
+        width: 25%;
+        height: auto;
+        background-color: white;
+        border: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    #bouton-menu {
+        display: none;
+    }
+
+    #menu-deroulant {
+        display: none;
+    }
+
+    .moi {
+        height: 2200px;
+    }
+
+    .cv {
+        float: none;
+        width: 75%;
+        height: 40%;
+    }
+
+    .tab {
+        float: none;
+        width: 75%;
+        height: 40%;
+    }
+    .tableau {
+        width: 100%;
+    }
+
+    .presentation_moi {
+        height: 500px;
+    }
+
+    .trois_cat {
+        margin: 0%;
+    }
+
+    .parcours {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+
+    .skills {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10%;
+        float: none;
+    }
+
+    .exp {
+        width: 90%;
+        margin-right: 5%;
+        margin-bottom: 10%;
+        height: auto;
+    }
+
+    .cards {
+        display: none;
+    }
+
+    .desc_entreprise {
+        width: 90% ;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 600px;
+    }
+
+    .website_links {
+        width: 90%;
+        height: 500px;
+    }
+
+    .container {
+        margin: 5%;
+        width: 90%;
+    }
+
+    .btn_contact button {
+        width: 30%;
+    }
+
+    footer {
+        height: 50px;
+    }
+}
+
+/* Pour les tablettes */
+@media (max-width: 1199px) and (min-width: 768px) {
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_portfolio,
+.title_firstname,
+.title_name,
+.div_photo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+}
+
+/* Pour les téléphones */
+@media (max-width: 767px) {
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.title_portfolio,
+.title_firstname,
+.title_name,
+.div_photo {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+}
+
+.lettre1,
+.lettre2,
+.lettre3,
+.lettre4,
+.lettre5,
+.lettre6,
+.lettre7,
+.lettre8,
+.lettre9,
+.lettre10,
+.lettre11,
+.lettre12,
+.lettre13,
+.lettre14,
+.lettre15,
+.lettre16,
+.lettre17,
+.lettre18,
+.lettre19,
+.lettre20,
+.lettre21,
+.lettre22,
+.lettre23,
+.lettre24 {
+    font-size: 5vw;
+}
+}
 
 
 

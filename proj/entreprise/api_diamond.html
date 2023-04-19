@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none;}</style>
+    <style>
+        img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+            display: none;
+        }
+    </style>
     <link rel="icon" href="../img_proj/diamond.png" width="100%" />
     <link href="../../css/proj.css" rel="stylesheet">
 
@@ -36,29 +40,39 @@
             <p>En étant revendeur de matériels professionnels, nous devons inclure tous les produits des catalogues des
                 fournisseurs.</p>
             <br>
-            <p>Pour ce faire ces derniers nous renseignent un lien de leur api nous permet d'obtenir toutes les données
-                des produits de leur site.</p>
+            <p>Pour ce faire ces derniers nous renseignent un lien de leur api nous permettant d'obtenir toutes les
+                données des produits de leur site.</p>
             <br>
-            <p></p>
+            <p>Pour importer les produits sur nos sites, nous passons par un système d'importation via des tableurs
+                excel.</p>
             <br>
-            <p></p>
+            <p>Nous utilisons donc ce lien d'API qui nous permet d'obtenir les données en json.</p>
             <br>
-            <p></p>
+            <p>De ce fait, à l'aide d'excel, nous pouvons les importer et les obtenir sur un tableur excel.</p>
+            <br>
+            <p>Avec ce tableur excel contenant toutes les données, nous pouvons le modifier à notre guise et l'importer
+                sur nos sites.</p>
         </div>
     </div>
     <h2>Réalisation</h2>
     <div class="separator"></div>
     <div class="intro_afi">
         <div class="txt_left">
-            <p></p>
+            <p>Avec l'API Diamond, nous utilisons le logiciel Postman qui nous permet de simuler une connexion à un site
+                et avoir accès à des données spécifiques afficher en json.</p>
             <br>
-            <p></p>
+            <p>Pour ce faire, il suffit d'indiquer le lien API ainsi que les identifiants. Il faut également
+                sélectionner la méthode POST qui permet d'envoyer la requête.</p>
             <br>
-            <p></p>
+            <p>Nous obtenons donc un token qui nous permet par la suite de simuler notre connexion avec les identifiants
+                précèdemment indiqués.</p>
             <br>
-            <p></p>
+            <p>Ce token doit être à la suite de "bearer" dans le champ Authorization. Nous pouvons maintenant envoyer la
+                requête avec la méthode GET afin d'obtenir toutes les données après s'être connecté.</p>
             <br>
-            <p></p>
+            <p>Nous avons enfin toutes les données en json que l'on copie colle dans sublime text et sauvegarder le
+                fichier. Sur excel nous importons les données via ce fichier json et le tableur excel se remplit avec
+                les données.</p>
         </div>
         <img src="../img_proj/postman.jpg" class="img_right">
         <br><br><br><br>

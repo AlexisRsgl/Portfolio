@@ -21,9 +21,34 @@
 <body>
     <div class="menu">
         <a href="#"><button>Accueil</button></a>
-        <a href="#moi"><button>Moi</button></a>
+        <a href="#moi"><button>Présentation</button></a>
         <a href="#entreprise"><button>Entreprise</button></a>
         <a href="#contact"><button>Contact</button></a>
+        <a href="#"><button id="bouton-menu">Projets</button></a>
+        <ul id="menu-deroulant">
+            <li><a href="proj/perso/mobileapi.html" id="menu_li" target="_blank">Mobile API</a></li>
+            <li><a href="proj/perso/reupp.html" id="menu_li" target="_blank">Réunion PP</a></li>
+            <li><a href="" id="menu_li" target="_blank">PPE 1</a></li>
+            <li><a href="" id="menu_li" target="_blank">PPE 2</a></li>
+            <li><a href="proj/entreprise/bot_afi.html" id="menu_li" target="_blank">BOT AFI</a></li>
+            <li><a href="proj/entreprise/bot_casselin.html" id="menu_li" target="_blank">BOT Casselin</a></li>
+            <li><a href="proj/entreprise/bot_atosa.html" id="menu_li" target="_blank">BOT Atosa</a></li>
+            <li><a href="proj/entreprise/api_diamond.html" id="menu_li" target="_blank">API Diamond</a></li>
+        </ul>
+        <script>
+        document.getElementById("bouton-menu").addEventListener("mouseenter", function() {
+        document.getElementById("menu-deroulant").style.display = "block";
+        })
+        document.getElementById("bouton-menu").addEventListener("mouseleave", function() {
+        document.getElementById("menu-deroulant").style.display = "none";
+        })
+        document.getElementById("menu-deroulant").addEventListener("mouseenter", function() {
+        document.getElementById("menu-deroulant").style.display = "block";
+        })
+        document.getElementById("menu-deroulant").addEventListener("mouseleave", function() {
+        document.getElementById("menu-deroulant").style.display = "none";
+        })
+        </script>
     </div>
     <!-- présentation -->
     <div class="presentation">
@@ -77,7 +102,7 @@
             <h1 class="sous_titles">Présentation</h1>
             <div class="separator"></div>
             <div class="cv">
-                <a target="_blank" href="docs/CV_AlexisR_2023.pdf"><button class="btn_cv"><img src="img/cv.png" width="50%"> <br><span>Cliquez ici pour ouvrir mon CV</span></button></a> 
+                <a target="_blank" href="docs/CV_AR_2023.pdf"><button class="btn_cv"><img src="img/cv.png" width="50%"> <br><span>Cliquez ici pour ouvrir mon CV</span></button></a> 
             </div>
             <div class="tab">
                 <table class="tableau">
@@ -204,6 +229,16 @@
                     </li>    
                 </ul>
             </div>
+            <div class="projets_perso_res">
+                <a href="proj/perso/mobileapi.html" target="_blank"><button><img src="img/mobile_res.jpeg"></button></a>
+                <br><span>Mobile API</span>
+                <br><br><br><a href="proj/perso/reupp.html" target="_blank"><button><img src="img/reu pp.jpg"></button></a>
+                <br><span>Réunion Parents Profs</span>
+                <br><br><br><a href="" target="_blank"><button><img src="img/ppe1.jpg"></button></a>
+                <br><span>PPE 1</span>
+                <br><br><br><a href="" target="_blank"><button><img src="img/ppe2.png"></button></a>
+                <br><span>PPE 2</span>
+            </div>
         </div>
     </div>
     
@@ -227,7 +262,7 @@
                 <br><br><p>Je suis responsable de la mise en ligne des produits sur Stock Direct CHR, le site comptabilise plus de 100 marques de produits disponibles pour plus de 50 000 produits ajoutés sur le site.</p>
                 <br><p>Très récemment, nous avons mise en ligne un nouveau site du nom de BBR-CHR pour toucher un maximum de clientèle sur le web. Je suis également responsable de la mise en ligne des produits.</p>
                 <br><p>Mon rôle dans l'entreprise est de maintenir la gestion des produits sur les sites, cela comprend aussi de gérer le référencement des produits pour être le plus visible sur la toile.</p>
-                <br><br><a href="entreprise.html" target="_blank"   ><button class="btn_more">En savoir plus +</button></a>
+                <br><br><a href="catering.html" target="_blank"   ><button class="btn_more">En savoir plus +</button></a>
             </div>
             <div class="website_links">
                 <h1 class="sous_titles">Stock Direct CHR</h1>
@@ -293,10 +328,20 @@
                             </div>          
                         </div>
                         <p class="card__description">Obtenir les données du site Diamond par le biais d'une API et de Postman.</p>
-                        </div>
+                        </div>""
                     </a>
                     </li>    
                 </ul>
+            </div>
+            <div class="projets_entreprise_res">
+                <a href="proj/entreprise/bot_afi.html" target="_blank"><button><img src="img/afi_res.png"></button></a>
+                <br><span>BOT AFI</span>
+                <br><br><br><a href="proj/entreprise/bot_casselin.html" target="_blank"><button><img src="img/casselin_res.png"></button></a>
+                <br><span>BOT Casselin</span>
+                <br><br><br><a href="proj/entreprise/bot_atosa.html" target="_blank"><button><img src="img/atosa_res.png"></button></a>
+                <br><span>BOT Atosa</span>
+                <br><br><br><a href="proj/entreprise/api_diamond.html" target="_blank"><button><img src="img/diamond_res.png"></button></a>
+                <br><span>API Diamond</span>
             </div>
     </div>
     <!-- fin entreprise -->

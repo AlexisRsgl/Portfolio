@@ -6,6 +6,11 @@
     font-family: 'Orbitron', 'Comfortaa', 'Ubuntu';
 }
 
+::selection {
+    background-color: black;
+    color: white;
+}
+
 .head {
     background-color: black;
 }
@@ -92,6 +97,27 @@ body {
     color: white;
     background-color: black;
     border: none;
+}
+
+#menu-deroulant {
+    display: none;
+    padding: 1%;
+}
+
+#menu-deroulant li {
+    flex-direction: row;
+    display: inline;
+}
+
+#menu_li {
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
+
+#menu_li:hover {
+    background-color: white;
+    color: black;
 }
 
 .presentation {
@@ -495,7 +521,11 @@ body {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-  }  
+  } 
+  
+.projets_perso_res {
+    display: none;
+}
 
 /*fin projets perso*/
 
@@ -572,6 +602,10 @@ body {
 
 .projets_entreprise {
     height: 500px;
+}
+
+.projets_entreprise_res {
+    display: none;
 }
 
 /* fin entreprise */
@@ -670,7 +704,4 @@ footer {
     color: black;
 }
 
-::selection {
-    background-color: black;
-    color: white;
-  }
+
