@@ -21,11 +21,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=utf-8\r\n";
-    mail($destinataire, $sujet, $message_html, $headers);
+    $result = mail($destinataire, $sujet, $message_html, $headers);
 
     // afficher un message de confirmation
-    echo '<p style="color:green;">Votre message a été envoyé avec succès.</p>';
+    if ($result) {
+        echo '<script>alert("Votre message a bien été envoyé.");window.location.href="index.html"</script>';
+    } else {
+        echo '<script>alert("Erreur, votre message n\'a pas été envoyé.");window.location.href="index.html"</script>';
+    }
 } else {
-    echo '<p style="color:red;">Votre message n a pas été envoyé.</p>';
+    echo '<script>alert("Erreur, votre message n\'a pas été envoyé.");window.location.href="index.html"</script>';
 }
 ?>
